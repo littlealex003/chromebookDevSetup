@@ -4,5 +4,5 @@
 https://9to5google.com/2018/09/20/how-to-install-android-studio-on-chrome-os/
 
 2 There are two options for Android Studio; download and install the Linux version as describe above, or download the new Chrome OS version and install that as described here:
-https://developer.android.com/studio/install
+https://developer.android.com/studio/install and here: https://www.aboutchromebooks.com/news/android-studio-chrome-os-chromebook-recommendation-google-io-2019/
 The user interface to install a Linux file has changed; you have to click it in files, Open With, then Install with Linux option appears
