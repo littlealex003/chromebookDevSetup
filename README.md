@@ -13,3 +13,10 @@ https://www.ssh.com/ssh/keygen/#creating-an-ssh-key-pair-for-user-authentication
 4 Add squashfs compatibility
 The version of Linux used in the container is quite old and doesn't come with SquashFS integrated, so to run software that requires it (suck as snap) you must download, build and install squashfuse:
 https://github.com/vasi/squashfuse
+
+5 Install snap
+https://snapcraft.io/docs/installing-snap-on-debian
+
+6 Fix directory permissions
+As per here, root directory has bad permissions and SNAP detects is
+https://askubuntu.com/questions/1114511/snap-installation-wont-start
