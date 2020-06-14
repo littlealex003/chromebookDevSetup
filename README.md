@@ -20,3 +20,7 @@ https://snapcraft.io/docs/installing-snap-on-debian
 6 Fix directory permissions
 As per here, root directory has bad permissions and SNAP detects is
 https://askubuntu.com/questions/1114511/snap-installation-wont-start
+
+7 Install sdk SDKMAN
+For managing Java versions
+https://sdkman.io/
