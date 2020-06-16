@@ -1,4 +1,18 @@
-** Root Login **
+**Developer Console**
+
+* To reach developer console hit *ctrl + alt + ->* (navigate forward button). To return use the same with navigate back 
+
+**Login to Developer Console**
+
+* login as root (root if it asks for password)
+
+**Set chronos user password**
+* now type the following: chromeos-setdevpasswd it will ask for a password, type the one you want
+* now you can use chronos and use the password you set.
+
+
+
+**Root Login**
 
 * Pressing Ctrl + D at the screen with the red exclamation mark on startup will take you to your Chrome OS install but pressing Ctrl + L will take you to the BIOS screen to boot from your USB drive. Let’s turn on the Ctrl + L functionality next:
 
