@@ -39,4 +39,4 @@ If a VM or container are stopped or killed ungracefully (e.g. powerloss), then d
 
 * **Sommelier** 
 
-**Sommelier**is a Wayland proxy compositor that runs inside the container. Sommelier provides seamless forwarding of contents, input events, clipboard data, etc... between Wayland applications inside the container and Chrome. Chrome does not run an X server or otherwise support the X protocol; thus Sommelier is also responsible for starting up XWayland (in rootless mode), acting as the X window manager to the clients, and translating the X protocol inside the container into the Wayland protocol for Chrome.
+**Sommelier** is a Wayland proxy compositor that runs inside the container. Sommelier provides seamless forwarding of contents, input events, clipboard data, etc... between Wayland applications inside the container and Chrome. Chrome does not run an X server or otherwise support the X protocol; thus Sommelier is also responsible for starting up XWayland (in rootless mode), acting as the X window manager to the clients, and translating the X protocol inside the container into the Wayland protocol for Chrome.
