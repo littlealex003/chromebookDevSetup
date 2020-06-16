@@ -1,3 +1,14 @@
+# Running Containers
+
+* You can launch crosh and use the vmc command to create new VMs manually. It will only run Termina at this point in time. You can then use vsh to connect to a VM instance and use LXC to run arbitrary containers.
+
+* The default container launched via Terminal is Debian with custom packages. See cros-container-guest-tools for more details.
+
+* In this flow, the VM is named termina and the container is penguin.
+
+
+
+
 By virtue of having things installed, nothing starts running right away. In that regard, when you log out, everything is shut down and killed, and when you log in, nothing is automatically restarted.
 
 When you run the Terminal, the Termina VM will be started automatically, and the default Crostini container will be started in that. You can now connect to the container via SSH or SFTP (via the Files app).
