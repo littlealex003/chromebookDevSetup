@@ -22,4 +22,6 @@ https://www.chromium.org/chromium-os
 
 ##### Play with crosvm kvm monitor
 
-# crosvm
+* crosvm
+
+crosvm is a custom virtual machine monitor that takes care of managing KVM, the guest VM, and facilitating the low-level (virtio-based) communication.
