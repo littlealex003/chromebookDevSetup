@@ -20,6 +20,10 @@ https://www.chromium.org/chromium-os
 
 #### What to do with the root level os
 
+##### Launch VMs with vmc and connect to them with vsh
+
+* You can launch crosh and use the vmc command to create new VMs manually. It will only run Termina at this point in time. You can then use vsh to connect to a VM instance and use LXC to run arbitrary containers.
+
 ##### Play with crosvm kvm monitor
 
 * crosvm
