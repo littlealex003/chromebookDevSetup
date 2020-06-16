@@ -1,6 +1,8 @@
-# Crostini
+# Crostini -- Penguin
 
-Crostini is the umbrella term for making Linux application support easy to use and integrating well with Chrome OS. It largely focuses on getting you a Terminal with a container with easy access to install whatever developer-focused tools you might want. It's the default first-party experience.
+Crostini is both the name of the default Linux Container used by Chromebook and the umbrella term for making Linux application support easy to use and integrating well with Chrome OS. It largely focuses on getting you a Terminal with a container with easy access to install whatever developer-focused tools you might want. It's the default first-party experience.
+
+Penguin is the name of the container created in the Termina vm
 
 When you run the Terminal, the Termina VM will be started automatically, and the default Crostini container will be started in that. 
 
