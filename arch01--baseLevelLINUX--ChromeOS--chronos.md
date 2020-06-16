@@ -8,7 +8,7 @@
 
 ##### Open the Developer Console (VT02)
 
-# Clicking <Ctrl>-<Alt>-< -> > (right navigation key) will open the Developer Console. Here you can login as root or chronos (the developer user)
+###### Clicking <Ctrl>-<Alt>-< -> > (right navigation key) will open the Developer Console. Here you can login as root or chronos (the developer user)
 
 ##### Via crosh
 
