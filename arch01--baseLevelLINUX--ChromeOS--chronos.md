@@ -26,16 +26,14 @@ https://www.chromium.org/chromium-os
 
 ##### Play with crosvm kvm monitor
 
+
+## Chromium Components
+
 * crosvm
 
 crosvm is a custom virtual machine monitor that takes care of managing KVM, the guest VM, and facilitating the low-level (virtio-based) communication.
 
-
-
-
-
-
-* Concierge is a daemon that runs in **Chrome OS** which handles lifecycle management of VMs and containers and uses gRPC over vsock to communicate with Maitred.
+* Concierge is a daemon that runs in **Chrome OS** which handles lifecycle management of VMs and containers and uses gRPC over vsock to communicate with Maitred (running in the Termina VM).
 
 * Cicerone is a daemon that runs in **Chrome OS** which handles all communication directly with the VM and container once the container starts running. Specifically, it communicates with Tremplin (which runs inside of the VM), and Garcon (which runs in a container inside the VM).
 
