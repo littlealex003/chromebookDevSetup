@@ -2,6 +2,8 @@
 
 Crostini is the umbrella term for making Linux application support easy to use and integrating well with Chrome OS. It largely focuses on getting you a Terminal with a container with easy access to install whatever developer-focused tools you might want. It's the default first-party experience.
 
+When you run the Terminal, the Termina VM will be started automatically, and the default Crostini container will be started in that. 
+
 ## Running Containers
 
 * You can launch crosh and use the vmc command to create new VMs manually. It will only run Termina at this point in time. You can then use vsh to connect to a VM instance and use LXC to run arbitrary containers.
