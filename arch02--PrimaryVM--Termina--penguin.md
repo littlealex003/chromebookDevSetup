@@ -13,8 +13,10 @@ When you run the Terminal, the Termina VM will be started automatically, and the
 ## Termina Components
 
 * **Maitred** 
+
 **Maitred** is our init and service/container manager inside of the **VM**, and is responsible for communicating with Concierge (which runs in the Chromium Root OS outside of the VM). Concierge sends it requests and Maitred is responsible for carrying those out.
 
 * **Tremplin**
+
 **Tremplin** is a daemon that runs in the VM to provide a gRPC wrapper for LXD. This includes basic functionality such as creating and starting containers, but also provides other Crostini-specific integration such as setting up a container's primary user, and setting up apt repositories in the guest to match the Chrome OS milestone.
 
