@@ -24,6 +24,10 @@ https://www.chromium.org/chromium-os
 
 * You can launch crosh and use the vmc command to create new VMs manually. It will only run Termina at this point in time. You can then use vsh to connect to a VM instance and use LXC to run arbitrary containers.
 
+* Connect to default container
+
+`crosh> vmc container termina penguin`
+
 * Start default VM
 
 `crosh> vmc start termina`
