@@ -29,15 +29,23 @@ https://www.chromium.org/chromium-os
 
 ## Chromium Components
 
-* crosvm
+* **crosvm**
 
-crosvm is a custom virtual machine monitor that takes care of managing KVM, the guest VM, and facilitating the low-level (virtio-based) communication.
+**crosvm** is a custom virtual machine monitor that takes care of managing KVM, the guest VM, and facilitating the low-level (virtio-based) communication.
 
-* Concierge is a daemon that runs in **Chrome OS** which handles lifecycle management of VMs and containers and uses gRPC over vsock to communicate with Maitred (running in the Termina VM).
+* **Concierge**
 
-* Cicerone is a daemon that runs in **Chrome OS** which handles all communication directly with the VM and container once the container starts running. Specifically, it communicates with Tremplin (which runs inside of the VM), and Garcon (which runs in a container inside the VM).
+**Concierge** is a daemon that runs in **Chrome OS** which handles lifecycle management of VMs and containers and uses gRPC over vsock to communicate with Maitred (running in the Termina VM).
 
-* Seneschal is a daemon that runs in **Chrome OS** that handles lifecycle management of 9P servers. When Concierge starts a VM, it sends a message to Seneschal to also start a 9s instance for that VM. Then, while configuring the VM, Concierge sends a message to Maitred instructing it to connect to the 9s instance and mount it inside the VM.
+* **Cicerone**
 
-* 9s is a server for the 9P file system protocol. There is one instance of 9s for each VM and it provides that VM with access to the user's data stored outside the VM. This includes things like the Downloads folder, Google Drive, and removable media. The lifecycle of each 9s instance is managed by Seneschal. Each 9s instance starts with no access to any files. Access to specific paths is granted by sending a message to Seneschal, which makes the requested path available to the specified 9s instance. Requests to share paths can only be triggered by some user action.
+**Cicerone** is a daemon that runs in **Chrome OS** which handles all communication directly with the VM and container once the container starts running. Specifically, it communicates with Tremplin (which runs inside of the VM), and Garcon (which runs in a container inside the VM).
+
+* **Seneschal**
+
+**Seneschal** is a daemon that runs in **Chrome OS** that handles lifecycle management of 9P servers. When Concierge starts a VM, it sends a message to Seneschal to also start a 9s instance for that VM. Then, while configuring the VM, Concierge sends a message to Maitred instructing it to connect to the 9s instance and mount it inside the VM.
+
+* **9s**
+
+**9s** is a server for the 9P file system protocol. There is one instance of 9s for each VM and it provides that VM with access to the user's data stored outside the VM. This includes things like the Downloads folder, Google Drive, and removable media. The lifecycle of each 9s instance is managed by Seneschal. Each 9s instance starts with no access to any files. Access to specific paths is granted by sending a message to Seneschal, which makes the requested path available to the specified 9s instance. Requests to share paths can only be triggered by some user action.
 
