@@ -23,3 +23,9 @@ Persistence
 All the VMs and containers created, and the data within those containers, will persist across user sessions (logout/login). They are kept in the same per-user encrypted storage as the rest of the browser's data.
 
 If a VM or container are stopped or killed ungracefully (e.g. powerloss), then data might be lost and need recovery like anything else in the system.
+
+
+
+* Garcon runs inside the container and provides integration with Cicerone/Chrome for more convenient/natural behavior. For example, if the container wants to open a URL, Garcon takes care of plumbing that request back out.
+
+* Sommelier is a Wayland proxy compositor that runs inside the container. Sommelier provides seamless forwarding of contents, input events, clipboard data, etc... between Wayland applications inside the container and Chrome. Chrome does not run an X server or otherwise support the X protocol; thus Sommelier is also responsible for starting up XWayland (in rootless mode), acting as the X window manager to the clients, and translating the X protocol inside the container into the Wayland protocol for Chrome.
