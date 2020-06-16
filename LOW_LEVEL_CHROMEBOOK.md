@@ -1,3 +1,13 @@
+** Root Login **
+
+* Pressing Ctrl + D at the screen with the red exclamation mark on startup will take you to your Chrome OS install but pressing Ctrl + L will take you to the BIOS screen to boot from your USB drive. Let’s turn on the Ctrl + L functionality next:
+
+* Press Ctrl + D at the initial startup screen to load Chrome OS.
+* Press Ctrl + Alt + F2 at the Chrome OS login screen.
+
+* Login using the password chronos
+
+
 **Access Root OS** (*requires Developer Mode to be enabled???*)
 
 Press Ctrl + Alt + T to bring up a terminal window tab.
