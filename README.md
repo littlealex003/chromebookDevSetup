@@ -46,27 +46,31 @@ https://sdkman.io/
 **Manually starting the container**
 * From a Chrome shell (Ctrl-Alt-T), stop and restart the penguin container:
 
-`vmc stop termina
+```vmc stop termina
 vmc start termina
 exit
-vmc container termina penguin`
+vmc container termina penguin
+```
 
 **GPU acceleration (alpha)**
 * Want to try (alpha) GPU acceleration? Restart the container with the --enable-gpu flag:
 
-`vmc stop termina
+```vmc stop termina
 vmc start --enable-gpu termina
 exit
-vmc container termina penguin`
+vmc container termina penguin
+```
 
 * Then, install updated mesa drivers inside the container:
 
-sudo apt update
+```sudo apt update
 sudo apt install -y cros-gpu-alpha mesa-utils
 sudo apt update
 sudo apt dist-upgrade
+```
 
 * Now, your apps and games should run with GPU acceleration. Give it a shot with Tux Racer:
 
-sudo apt install -y extremetuxracer
+```sudo apt install -y extremetuxracer
 /usr/games/etr
+```
