@@ -16,7 +16,18 @@ When you run the Terminal, the Termina VM will be started automatically, and the
 
 * In this flow, the VM is named termina and the container is penguin.
 
+Other Linux containers
+When you enable Linux on Chrome OS, a Debian “stretch” distribution is installed. This is built on top of your Linux container, so any of the supported container images can be used to easily install a different distribution including: Gentoo, Ubuntu, Fedora, Alpine, CentOS, openSUSE, and Arch Linux. Chrome OS aims to integrate the default container image as tightly as possible. However, with non-default images, expect some rough edges and unexpected container behavior.
+Let’s go through the steps of installing the latest release of Ubuntu: disco (instructions adapted from the step-by-step guide here).
+First, open a Chrome shell (Ctrl-Alt-T) and enter the VM, terminal:
 
+vsh termina
+Next, choose the LXC image you want to use:
+
+lxc image copy images:ubuntu/disco local: --alias disco
+lxc launch disco discotheque
+lxc exec discotheque -- bash
+You’re in! Now, install the packages to glue your Linux container and Chrome OS together.
 
 
 By virtue of having things installed, nothing starts running right away. In that regard, when you log out, everything is shut down and killed, and when you log in, nothing is automatically restarted.
