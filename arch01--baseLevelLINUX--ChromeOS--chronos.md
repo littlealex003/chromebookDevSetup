@@ -1,6 +1,6 @@
-# Chromebook Root Level OS
+# Chromium
 
-## Root Linux
+## Chromebook Root Level OS -- ChromeOS
 
 ### The Chromebook is running a root level protected Linux Kernel
 
