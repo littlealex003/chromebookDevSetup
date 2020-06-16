@@ -14,7 +14,7 @@ https://www.chromium.org/chromium-os
 
 ##### Via crosh (chrome shell)
 
-1. Click <Ctrl>-<Alt>-t to open a crosh tab 
+1. Click < Ctrl > - < Alt > - t to open a crosh tab 
 1. Type "shell" to open a shell logged into the root OS
 1. You are now logged in as chronos
 
