@@ -1,4 +1,4 @@
-# Chromium
+# Chromium (ChromeOS)
 
 ## Chromebook Root Level OS -- ChromeOS
 
@@ -12,7 +12,7 @@ https://www.chromium.org/chromium-os
 
 ###### Clicking < Ctrl > - < Alt > - < -> > (right navigation key) will open the Developer Console. Here you can login as root or chronos (the developer user)
 
-##### Via crosh
+##### Via crosh (chrome shell)
 
 1. Click <Ctrl>-<Alt>-t to open a crosh tab 
 1. Type "shell" to open a shell logged into the root OS
