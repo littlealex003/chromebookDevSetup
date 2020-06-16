@@ -28,6 +28,10 @@ https://www.chromium.org/chromium-os
 
 `crosh> vmc container termina penguin`
 
+* Connect to the the default VM
+
+`crosh> vsh termina`
+
 * Start default VM
 
 `crosh> vmc start termina`
