@@ -24,13 +24,17 @@ https://www.chromium.org/chromium-os
 
 * You can launch crosh and use the vmc command to create new VMs manually. It will only run Termina at this point in time. You can then use vsh to connect to a VM instance and use LXC to run arbitrary containers.
 
-`crosh> vmc stop termina
+* Start default VM
 
-`crosh> vmc start termina
+`crosh> vmc start termina`
 
 Audio is an experimental feature in R79+ images. You need to enable audio capture (without permission model) from crosh.
 
-`crosh> vmc start termina --enable-audio-capture
+`crosh> vmc start termina --enable-audio-capture`
+
+* Stop default VM
+
+`crosh> vmc stop termina`
 
 ##### Play with crosvm kvm monitor
 
